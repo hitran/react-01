@@ -1,5 +1,6 @@
 import React from 'react'
-import reactImg from '../assets/config.png'
+import reactImg from '../../assets/config.png'
+import './Header.css'
 
 function Header() {
   const reactDescriptions = ['Core', 'Fundamental', 'Crucial']

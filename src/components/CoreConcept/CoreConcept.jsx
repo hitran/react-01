@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './CoreConcept.css'
 
 function CoreConcept(props) {
   return (
