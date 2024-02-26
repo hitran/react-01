@@ -1,15 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function TabButton(props) {
+export default function TabButton({ children, onSelect, isSelected }) {
   return (
     <li>
-      <button onClick={props.onSelect}>{props.children}</button>
+      <button className={isSelected ? 'active' : undefined} onClick={onSelect}>
+        {children}
+      </button>
     </li>
   )
 }
 
 TabButton.propTypes = {
   children: React.ReactNode,
-  onSelect: PropTypes.function
+  onSelect: PropTypes.function,
+  isSelected: PropTypes.bool
 }
